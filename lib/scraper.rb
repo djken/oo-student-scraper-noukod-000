@@ -18,7 +18,7 @@ class Scraper
       student_info = {:name => name,
                       :location => location,
                       :profile_url => profile_url}
-                
+
       students << student_info
       end
     students
