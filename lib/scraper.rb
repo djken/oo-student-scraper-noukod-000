@@ -42,7 +42,7 @@ class Scraper
       #   student[:blog] = link
       # end
       case link.include?
-      when "twitter")
+      when "twitter"
         student[:twitter] = link
       when "linkedin"
         student[:linkedin] = link
