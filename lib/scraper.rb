@@ -6,7 +6,6 @@ class Scraper
 
   # this method is responsible for scraping the index page that lists all of the students
   def self.scrape_index_page(index_url)
-    def self.scrape_index_page(index_url)
     page = Nokogiri::HTML(open(index_url))
     students = []
 
@@ -14,6 +13,7 @@ class Scraper
       name = student.css(".student-name").text
       location = student.css(".student-location").text
       profile_url = student.css("a").attribute("href").value
+      
       student_info = {:name => name,
                 :location => location,
                 :profile_url => profile_url}
