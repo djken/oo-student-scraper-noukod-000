@@ -34,13 +34,13 @@ class Scraper
     container.each do |link|
     case link.include?
     when "twitter")
-        student[:twitter] = link
+      student[:twitter] = link
     when "linkedin"
-        student[:linkedin] = link
+      student[:linkedin] = link
     when "github"
-        student[:github] = link
+      student[:github] = link
     when ".com"
-        student[:blog] = link
+      student[:blog] = link
     end
     end
       student[:profile_quote] = page.css(".profile-quote").text
