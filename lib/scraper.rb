@@ -8,8 +8,10 @@ class Scraper
 
   end
 
+  # This method is responsible for scraping an individual student's profile page
   def self.scrape_profile_page(profile_url)
 
   end
 
 end
+ 
