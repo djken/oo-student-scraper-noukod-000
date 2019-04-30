@@ -34,7 +34,7 @@ class Scraper
      = page.css(".social-icon-container a").collect do |icon|
       icon.attribute("href").value
     end
-    
+
     container.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
