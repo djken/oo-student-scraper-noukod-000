@@ -21,7 +21,7 @@ class Scraper
 
       students.push(student_info)
       end
-    students
+      students
   end
 
   # This method is responsible for scraping an individual student's profile page
