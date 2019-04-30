@@ -22,4 +22,5 @@ class Student
   def self.all
     @@all
   end
+  binding.pry
 end
