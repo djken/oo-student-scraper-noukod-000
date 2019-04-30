@@ -30,9 +30,9 @@ class Scraper
 
     # student[:profile_quote] = page.css(".profile-quote")
     # student[:bio] = page.css("div.description-holder p")
-    container = page.css(".social-icon-container a").collect do |icon| 
+    container = page.css(".social-icon-container a").collect do |icon|
       icon.attribute("href").value
-      
+
     container.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
