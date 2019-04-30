@@ -41,7 +41,8 @@ class Scraper
       # elsif link.include?(".com")
       #   student[:blog] = link
       # end
-      case link.include?
+      l = link.include?
+      case l
       when "twitter"
         student[:twitter] = link
       when "linkedin"
