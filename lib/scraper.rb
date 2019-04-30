@@ -17,7 +17,8 @@ class Scraper
 
       student_info = {:name => name,
                       :location => location,
-                      :profile_url => profile_url}
+                      :profile_url => profile_url
+                    }
 
       students.push(student_info)
       end
