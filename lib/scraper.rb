@@ -4,7 +4,6 @@ require 'pry'
 
 # This is a class method takes in an argument of a student's profile URL
 class Scraper
-
   # this method is responsible for scraping the index page that lists all of the students
   def self.scrape_index_page(index_url)
     page = Nokogiri::HTML(open(index_url))
