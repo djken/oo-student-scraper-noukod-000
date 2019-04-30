@@ -12,8 +12,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |st_hash| #each student is a hash
-      Student.new(st_hash)
+    students_array.each {|st_hash| Student.new(st_hash)}
     end
   end
 
