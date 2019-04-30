@@ -33,15 +33,15 @@ class Scraper
       icon.attribute("href").value
     end
 
-    container.each do |link|
-      if link.include?("twitter")
-        student[:twitter] = link
-      elsif link.include?("linkedin")
-        student[:linkedin] = link
-      elsif link.include?("github")
-        student[:github] = link
-      elsif link.include?(".com")
-        student[:blog] = link
+    social_link.each do |s_link|
+      if s_link.include?("twitter")
+        student[:twitter] = s_link
+      elsif s_link.include?("linkedin")
+        student[:linkedin] = s_link
+      elsif s_link.include?("github")
+        student[:github] = s_link
+      elsif s_link.include?(".com")
+        student[:blog] = s_link
       end
     end
       student[:profile_quote] = page.css(".profile-quote").text
