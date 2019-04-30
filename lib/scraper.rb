@@ -2,6 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'pry'
 
+# This is a class method takes in an argument of a student's profile URL
 class Scraper
 
   # this method is responsible for scraping the index page that lists all of the students
@@ -30,7 +31,7 @@ class Scraper
 
     # student[:profile_quote] = page.css(".profile-quote")
     # student[:bio] = page.css("div.description-holder p")
-    container = page.css(".social-icon-container a").collect do |icon|
+     = page.css(".social-icon-container a").collect do |icon|
       icon.attribute("href").value
     end
     
@@ -49,5 +50,4 @@ class Scraper
       student[:bio] = page.css("div.description-holder p").text
       student
     end
-
 end
